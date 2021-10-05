@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Spice">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Booking.BookaFlight">
+       <methods>
+     <include name="Booking_RoundTrp_Testcase1"></include>
+     </methods>
+     </class>
+    <class name="Booking.BookHoliday"/>
+    <class name="Booking.BookaHotel">
+    <methods>
+    <exclude name="Booking_RoundTrp.*"></exclude>
+    </methods>
+    </class>
+    
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Spice -->
